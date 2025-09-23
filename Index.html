@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Levine | Official Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark background for a premium feel */
+            color: #f3f4f6;
+        }
+        .hero-bg {
+            background-image: linear-gradient(to bottom, rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 1)), url('https://placehold.co/1200x800/000000/FFFFFF?text=Adam+Levine');
+            background-size: cover;
+            background-position: top center;
+        }
+        .nav-link {
+            @apply px-4 py-2 text-gray-300 hover:text-white transition-colors duration-300;
+        }
+        .section-title {
+            @apply text-4xl font-bold text-center mb-12 text-white;
+        }
+        .album-card {
+            @apply bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Header & Navigation -->
+    <header id="home" class="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-80 backdrop-blur-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-white tracking-wider">ADAM LEVINE</a>
+            <nav class="hidden md:flex items-center">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#music" class="nav-link">Music</a>
+                <a href="#tour" class="nav-link">Tour</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-center nav-link">About</a>
+            <a href="#music" class="block py-2 text-center nav-link">Music</a>
+            <a href="#tour" class="block py-2 text-center nav-link">Tour</a>
+            <a href="#gallery" class="block py-2 text-center nav-link">Gallery</a>
+            <a href="#contact" class="block py-2 text-center nav-link">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex items-center justify-center text-center">
+        <div class="max-w-3xl px-4">
+            <h1 class="text-5xl md:text-7xl font-black text-white uppercase tracking-widest leading-tight">Adam Levine</h1>
+            <p class="mt-4 text-xl text-gray-300">Singer, Songwriter, Musician</p>
+            <a href="#music" class="mt-8 inline-block bg-rose-600 text-white font-bold py-3 px-8 rounded-lg text-lg uppercase hover:bg-rose-700 transition-colors duration-300">
+                Listen Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content Wrapper -->
+    <main class="container mx-auto px-6 py-20">
+
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <h2 class="section-title">About Adam</h2>
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/3">
+                    <img src="https://placehold.co/600x600/333333/FFFFFF?text=A.L." alt="Adam Levine" class="rounded-lg shadow-2xl w-full">
+                </div>
+                <div class="md:w-2/3">
+                    <p class="text-lg text-gray-300 leading-relaxed mb-4">
+                        Adam Noah Levine is an American singer, songwriter, and musician, who is the lead vocalist and rhythm guitarist for the pop rock band Maroon 5. Levine began his musical career in 1994 with the band Kara's Flowers, of which he was the lead vocalist and lead guitarist.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed mb-4">
+                        With Maroon 5, he has released numerous multi-platinum albums and chart-topping singles, including "This Love," "Moves Like Jagger," and "Girls Like You." Known for his distinctive tenor voice, Levine has also served as a coach on NBC's reality talent show The Voice from 2011 to 2019.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Beyond music, he has ventured into acting and business, establishing himself as a versatile and influential figure in the entertainment industry.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Music Section -->
+        <section id="music" class="py-20">
+            <h2 class="section-title">Music</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Album 1 -->
+                <div class="album-card">
+                    <img src="https://placehold.co/500x500/1DB954/FFFFFF?text=Jordi" alt="Album Cover for Jordi" class="w-full h-auto">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Jordi</h3>
+                        <p class="text-gray-400 text-sm">Maroon 5 (2021)</p>
+                    </div>
+                </div>
+                <!-- Album 2 -->
+                <div class="album-card">
+                    <img src="https://placehold.co/500x500/FF4500/FFFFFF?text=Red+Pill+Blues" alt="Album Cover for Red Pill Blues" class="w-full h-auto">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Red Pill Blues</h3>
+                        <p class="text-gray-400 text-sm">Maroon 5 (2017)</p>
+                    </div>
+                </div>
+                <!-- Album 3 -->
+                <div class="album-card">
+                    <img src="https://placehold.co/500x500/4682B4/FFFFFF?text=V" alt="Album Cover for V" class="w-full h-auto">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">V</h3>
+                        <p class="text-gray-400 text-sm">Maroon 5 (2014)</p>
+                    </div>
+                </div>
+                <!-- Album 4 -->
+                <div class="album-card">
+                    <img src="https://placehold.co/500x500/8A2BE2/FFFFFF?text=Overexposed" alt="Album Cover for Overexposed" class="w-full h-auto">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Overexposed</h3>
+                        <p class="text-gray-400 text-sm">Maroon 5 (2012)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tour Dates Section -->
+        <section id="tour" class="py-20">
+            <h2 class="section-title">Tour Dates</h2>
+            <div class="max-w-4xl mx-auto bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead class="bg-gray-700 text-gray-300 uppercase text-sm">
+                            <tr>
+                                <th class="p-4">Date</th>
+                                <th class="p-4">City</th>
+                                <th class="p-4">Venue</th>
+                                <th class="p-4 text-center">Tickets</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-700">
+                            <!-- Fictional Tour Dates -->
+                            <tr>
+                                <td class="p-4 font-semibold">Oct 15, 2025</td>
+                                <td class="p-4">New York, NY</td>
+                                <td class="p-4">Madison Square Garden</td>
+                                <td class="p-4 text-center"><a href="#" class="bg-rose-600 text-white py-2 px-4 rounded-md hover:bg-rose-700 transition-colors">Buy Now</a></td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-semibold">Oct 22, 2025</td>
+                                <td class="p-4">Los Angeles, CA</td>
+                                <td class="p-4">Crypto.com Arena</td>
+                                <td class="p-4 text-center"><a href="#" class="bg-rose-600 text-white py-2 px-4 rounded-md hover:bg-rose-700 transition-colors">Buy Now</a></td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-semibold">Nov 05, 2025</td>
+                                <td class="p-4">Chicago, IL</td>
+                                <td class="p-4">United Center</td>
+                                <td class="p-4 text-center"><a href="#" class="bg-gray-600 text-white py-2 px-4 rounded-md cursor-not-allowed">Sold Out</a></td>
+                            </tr>
+                             <tr>
+                                <td class="p-4 font-semibold">Nov 12, 2025</td>
+                                <td class="p-4">London, UK</td>
+                                <td class="p-4">The O2 Arena</td>
+                                <td class="p-4 text-center"><a href="#" class="bg-rose-600 text-white py-2 px-4 rounded-md hover:bg-rose-700 transition-colors">Buy Now</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-20">
+            <h2 class="section-title">Gallery</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="grid gap-4">
+                    <div><img class="h-auto max-w-full rounded-lg" src="https://placehold.co/800x1200/111/FFF?text=Live" alt="Adam Levine performing live"></div>
+                    <div><img class="h-auto max-w-full rounded-lg" src="https://placehold.co/800x600/222/FFF?text=Studio" alt="Adam Levine in the studio"></div>
+                </div>
+                <div class="grid gap-4">
+                    <div><img class="h-auto max-w-full rounded-lg" src="https://placehold.co/800x600/333/FFF?text=Candid" alt="Candid shot of Adam Levine"></div>
+                    <div><img class="h-auto max-w-full rounded-lg" src="https://placehold.co/800x1200/444/FFF?text=Photoshoot" alt="Adam Levine photoshoot"></div>
+                </div>
+                 <div class="grid gap-4">
+                    <div><img class="h-auto max-w-full rounded-lg" src="https://placehold.co/800x1200/555/FFF?text=Guitar" alt="Adam Levine with guitar"></div>
+                    <div><img class="h-auto max-w-full rounded-lg" src="https://placehold.co/800x600/666/FFF?text=Maroon+5" alt="Adam Levine with Maroon 5"></div>
+                </div>
+                 <div class="grid gap-4">
+                    <div><img class="h-auto max-w-full rounded-lg" src="https://placehold.co/800x600/777/FFF?text=The+Voice" alt="Adam Levine on The Voice"></div>
+                    <div><img class="h-auto max-w-full rounded-lg" src="https://placehold.co/800x1200/888/FFF?text=Portrait" alt="Portrait of Adam Levine"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800">
+        <div class="container mx-auto px-6 py-12 text-center">
+            <h3 class="text-2xl font-bold mb-4">Connect with Adam</h3>
+            <div class="flex justify-center space-x-6 mb-8">
+                <!-- Social Icons using SVG for quality -->
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                   <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.08 2.525c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zM12 8.118c-2.146 0-3.882 1.736-3.882 3.882s1.736 3.882 3.882 3.882 3.882-1.736 3.882-3.882S14.146 8.118 12 8.118zM12 14.354c-1.309 0-2.372-1.063-2.372-2.372s1.063-2.372 2.372-2.372 2.372 1.063 2.372 2.372-1.063 2.372-2.372 2.372zM16.536 6.312a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z" clip-rule="evenodd" /></svg>
+                </a>
+                 <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                   <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.78 22 12 22 12s0 3.22-.42 4.814a2.506 2.506 0 0 1-1.768 1.768c-1.594.42-7.812.42-7.812.42s-6.218 0-7.812-.42a2.506 2.506 0 0 1-1.768-1.768C2 15.22 2 12 2 12s0-3.22.42-4.814a2.506 2.506 0 0 1 1.768-1.768C5.782 5 12 5 12 5s6.218 0 7.812.418ZM15.192 12 10 15V9l5.192 3z" clip-rule="evenodd" /></svg>
+                </a>
+            </div>
+            <p class="text-gray-500">&copy; 2025 Adam Levine. All Rights Reserved. Website by a fan.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const navLinks = document.querySelectorAll('#mobile-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
